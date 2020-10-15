@@ -6,7 +6,7 @@ sudo apt update -y
 sudo apt upgrade -y
 
 # Package Needed
-sudo apt-get install curl apt-transport-https ca-certificates software-properties-common -Y
+sudo apt-get install curl apt-transport-https ca-certificates software-properties-common -y
 
 # Add Docker Repo
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
