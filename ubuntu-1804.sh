@@ -6,7 +6,7 @@ sudo apt update -y
 sudo apt upgrade -y
 
 # Package Needed
-sudo apt-get install curl apt-transport-https ca-certificates software-properties-common
+sudo apt-get install curl apt-transport-https ca-certificates software-properties-common -Y
 
 # Add Docker Repo
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -14,10 +14,9 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt update -y
 
 # Installing Docker-ce
-sudo apt install docker-ce
+sudo apt install docker-ce -y
 
 # Adding TO Docker Group
-sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
 
